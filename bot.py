@@ -1,4 +1,6 @@
-#(©)mogambo-xd
+#(©)@DP_BOTZ
+#don't remove credit @DP_BOTZ 
+
 
 from aiohttp import web
 from plugins import web_server
