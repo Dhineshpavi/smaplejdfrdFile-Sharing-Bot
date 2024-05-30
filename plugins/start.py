@@ -88,13 +88,14 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("😊 𝐀𝐛𝐨𝐮𝐭 𝐌𝐞", callback_data = "about"),
+                    InlineKeyboardButton("🔐 𝐂𝐥𝐨𝐬𝐞", callback_data = "close")
                 ]
             ]
         )
-        await message.reply_text(
-            text = START_MSG.format(
+        await message.reply_photo(
+            photo="https://graph.org/file/a433d5b826f1dcb5a6820.jpg",
+            caption = START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
                 username = None if not message.from_user.username else '@' + message.from_user.username,
@@ -102,7 +103,7 @@ async def start_command(client: Client, message: Message):
                 id = message.from_user.id
             ),
             reply_markup = reply_markup,
-            disable_web_page_preview = True,
+            # disable_web_page_preview = True,
             quote = True
         )
         return
@@ -123,7 +124,12 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "💥 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 💥",
+                url = "https://t.me/+ycCgG3HLH1ZjMzZl")
+        ],
+        [
+            InlineKeyboardButton(
+                "💥 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 💥",
                 url = client.invitelink)
         ]
     ]
@@ -131,7 +137,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = '✅ 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 ✅',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
