@@ -1,4 +1,6 @@
-#(©)Moganbo_odin
+#(©)@DP_BOTZ
+#don't remove credit @DP_BOTZ 
+
 
 import asyncio
 from pyrogram import filters, Client
