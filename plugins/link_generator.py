@@ -1,4 +1,6 @@
-#(©)cybermusicproject
+#(©)@DP_BOTZ
+#don't remove credit @DP_BOTZ 
+
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
