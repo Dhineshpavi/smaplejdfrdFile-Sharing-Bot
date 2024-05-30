@@ -1,4 +1,6 @@
-#(©)cybermusicproject
+#(©)@DP_BOTZ
+#dont remove credit @DP_BOTZ 
+
 
 from pyrogram import __version__
 from bot import Bot
