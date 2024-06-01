@@ -127,7 +127,7 @@ async def not_joined(client: Client, message: Message):
         [
             InlineKeyboardButton(
                 "💥 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 💥",
-                url = "https://t.me/+ycCgG3HLH1ZjMzZl")
+                url = "https://t.me/Naruto_Shippuden_TamilDub_Series")
         ],
         [
             InlineKeyboardButton(
